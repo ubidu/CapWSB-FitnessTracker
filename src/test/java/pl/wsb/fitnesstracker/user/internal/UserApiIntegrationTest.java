@@ -138,10 +138,10 @@ class UserApiIntegrationTest extends IntegrationTestBase {
     @Test
     void shouldPersistUser_whenCreatingUser() throws Exception {
 
-        final String USER_NAME = "Mike";
-        final String USER_LAST_NAME = "Scott";
-        final String USER_BIRTHDATE = "1999-09-29";
-        final String USER_EMAIL = "mike.scott@domain.com";
+        final String USER_NAME = "John";
+        final String USER_LAST_NAME = "Pork";
+        final String USER_BIRTHDATE = "2019-01-01";
+        final String USER_EMAIL = "john.pork@gmail.com";
 
         String creationRequest = """
                 
@@ -178,10 +178,10 @@ class UserApiIntegrationTest extends IntegrationTestBase {
     void shouldUpdateUser_whenUpdatingUser() throws Exception {
         User user1 = existingUser(generateUser());
 
-        final String USER_NAME = "Mike";
-        final String USER_LAST_NAME = "Scott";
-        final String USER_BIRTHDATE = "1999-09-29";
-        final String USER_EMAIL = "mike.scott@domain.com";
+        final String USER_NAME = "John";
+        final String USER_LAST_NAME = "Pork";
+        final String USER_BIRTHDATE = "2019-01-01";
+        final String USER_EMAIL = "john.pork@gmail.com";
 
         String updateRequest = """
                 

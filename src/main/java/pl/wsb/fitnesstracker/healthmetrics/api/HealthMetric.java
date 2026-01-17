@@ -35,13 +35,13 @@ public class HealthMetric {
     @Column(name = "date", nullable = false)
     private Date date;
 
-    @Column(name = "weight") 
+    @Column(name = "weight") // moze byc null, poniewaz user moze nie podac
     private Double weight;
 
-    @Column(name = "height") 
+    @Column(name = "height") // tak jak wyzej
     private Double height;
 
-    @Column(name = "heart_rate") 
+    @Column(name = "heart_rate") // zakladajac ze uzytkownik np nie ma zalozonego zegarka fitness to nie ma jak odczytac tetna
     private Double heartRate;
 
     public HealthMetric(
